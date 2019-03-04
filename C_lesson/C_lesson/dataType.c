@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <float.h>
 #include <cstdbool>
+#include <limits.h>
 
 int main()
 {
