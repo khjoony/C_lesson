@@ -24,5 +24,8 @@
     <ClCompile Include="dataType2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="starTree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
