@@ -3,24 +3,23 @@
 #include <stdio.h>
 #include <string.h>
 
-#define INPUT_MAX 100
+
+#define INPUT_MAX 15
 
 int main()
 {
-	int iNum[10];
-	char cStr[INPUT_MAX];
+	int iInput;
+	char cInput;
+	int arrInput[INPUT_MAX];
+	for (int i = 0; i < INPUT_MAX; ++i)
+	{
+	printf("%d번 학생의 점수를 입력해주세요 :", i +1);
+	scanf_s("%d", &arrInput[i]);
+	}
+	for (int i = 0; i < INPUT_MAX; ++i)
+	{
+	printf_s("%2d 번 학생의 점수는 \"%4d\"  입니다.\n",i+1,  arrInput[i]);
+	}
 
-	printf("Iput number : ");
-	scanf("%d", &iNum);
-	iNum[1] = 5;
-	printf("What is &iNum = %d\n", &iNum);
-	printf("What is &cStr = %d\n", &cStr);
-	printf("What is &iNum[1] = %d\n", &iNum[1]);
-	printf("What is *iNum = %d\n", *iNum);
-	printf("What is iNum[0] = %d\n", iNum[0]);
-	printf("What is iNum[1] = %d\n", iNum[1]);
-	printf("What is sizeof(iNum) = %d\n",sizeof(iNum));
-	*&iNum[3] = 6;
-	return 0;
-
+	return 0;   
 }
